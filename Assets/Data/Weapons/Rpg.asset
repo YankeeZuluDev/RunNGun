@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0788c9d6ced5f145b1c9f09db3d1a19, type: 3}
+  m_Name: Rpg
+  m_EditorClassIdentifier: 
+  weaponPrefab: {fileID: 9094892765656804837, guid: 9f81f4f80dba0d6449193ff4917d36de,
+    type: 3}
+  bulletPrefab: {fileID: 3545766567053737753, guid: 498c0ef7124ded647aeed33e8b98c3cf,
+    type: 3}
+  weaponProperties:
+  - PropertyType: 0
+    Amount: 280
+    MinAmount: 200
+    MaxAmount: 340
+  - PropertyType: 1
+    Amount: 1
+    MinAmount: 0.7
+    MaxAmount: 1.3
+  - PropertyType: 2
+    Amount: 6
+    MinAmount: 3
+    MaxAmount: 10
+  - PropertyType: 3
+    Amount: 13
+    MinAmount: 8
+    MaxAmount: 18
+  upgrade: {fileID: 0}

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0788c9d6ced5f145b1c9f09db3d1a19, type: 3}
+  m_Name: Sniper
+  m_EditorClassIdentifier: 
+  weaponPrefab: {fileID: 7840787206546972310, guid: a5f465e5673dd0e48bf23b3b64c228b9,
+    type: 3}
+  bulletPrefab: {fileID: 302499900838543899, guid: 5f92d8ee3f1c58b45bbf7971db75651a,
+    type: 3}
+  weaponProperties:
+  - PropertyType: 0
+    Amount: 105
+    MinAmount: 70
+    MaxAmount: 140
+  - PropertyType: 1
+    Amount: 0.8
+    MinAmount: 0.6
+    MaxAmount: 1.1
+  - PropertyType: 2
+    Amount: 11
+    MinAmount: 7
+    MaxAmount: 16
+  - PropertyType: 3
+    Amount: 13
+    MinAmount: 8
+    MaxAmount: 18
+  upgrade: {fileID: 11400000, guid: ce655cd6e950f954c8b34d4b311ade88, type: 2}

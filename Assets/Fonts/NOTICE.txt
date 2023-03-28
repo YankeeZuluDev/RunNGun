@@ -1,0 +1,8 @@
+Luckiest Guy Font
+Copyright 2010 Astigmatic
+Licensed under the Apache License, Version 2.0
+
+This product includes software developed by Astigmatic (https://www.astigmatic.com/).
+
+This font file has been modified from the original version, with the following changes:
+-Converted to TextMeshPro font asset format.

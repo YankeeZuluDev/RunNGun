@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0788c9d6ced5f145b1c9f09db3d1a19, type: 3}
+  m_Name: Smg
+  m_EditorClassIdentifier: 
+  weaponPrefab: {fileID: 707273061582336200, guid: ff63592a41e428a4cbe4b7ef3f60abcf,
+    type: 3}
+  bulletPrefab: {fileID: 8625228173601922734, guid: aaa26305c4f2e284b8cb0e96f1df1ad1,
+    type: 3}
+  weaponProperties:
+  - PropertyType: 0
+    Amount: 10
+    MinAmount: 5
+    MaxAmount: 15
+  - PropertyType: 1
+    Amount: 0.3
+    MinAmount: 0.1
+    MaxAmount: 0.5
+  - PropertyType: 2
+    Amount: 9
+    MinAmount: 6
+    MaxAmount: 14
+  - PropertyType: 3
+    Amount: 13
+    MinAmount: 8
+    MaxAmount: 18
+  upgrade: {fileID: 11400000, guid: 776f45e9df480e04b8d5f472cb20abcb, type: 2}

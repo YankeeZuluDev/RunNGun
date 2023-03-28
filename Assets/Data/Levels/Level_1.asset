@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c805e0282c552d409e1c3c579f6da0e, type: 3}
+  m_Name: Level_1
+  m_EditorClassIdentifier: 
+  roadLenght: 95
+  roadWidth: 6
+  spawnableData:
+  - SpawnablePrefab: {fileID: 825055414241866519, guid: d9c07461535a7a14283dd8d5d4e01928,
+      type: 3}
+    Position: {x: 2, y: 0.7, z: 72.75}
+    Rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+    Scale: {x: 1, y: 1, z: 1}
+  - SpawnablePrefab: {fileID: 825055414241866519, guid: d9c07461535a7a14283dd8d5d4e01928,
+      type: 3}
+    Position: {x: -2, y: 0.7, z: 72.75}
+    Rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+    Scale: {x: 1, y: 1, z: 1}
+  - SpawnablePrefab: {fileID: 825055414241866519, guid: d9c07461535a7a14283dd8d5d4e01928,
+      type: 3}
+    Position: {x: 0, y: 0.7, z: 72.75}
+    Rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+    Scale: {x: 1, y: 1, z: 1}
+  - SpawnablePrefab: {fileID: 5560439046438133864, guid: 8e63ca9d9b4194e4ea0e88eb8c4ef055,
+      type: 3}
+    Position: {x: 2, y: 0.7, z: 69}
+    Rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+    Scale: {x: 1, y: 1, z: 1}
+  - SpawnablePrefab: {fileID: 5560439046438133864, guid: 8e63ca9d9b4194e4ea0e88eb8c4ef055,
+      type: 3}
+    Position: {x: -2, y: 0.7, z: 69}
+    Rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+    Scale: {x: 1, y: 1, z: 1}
+  - SpawnablePrefab: {fileID: 5560439046438133864, guid: 8e63ca9d9b4194e4ea0e88eb8c4ef055,
+      type: 3}
+    Position: {x: 0, y: 0.7, z: 69}
+    Rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+    Scale: {x: 1, y: 1, z: 1}
+  - SpawnablePrefab: {fileID: 8408366360640697050, guid: e8a4e6bbd9d8e214b8f866ecf74a798d,
+      type: 3}
+    Position: {x: 1.5, y: 1.6, z: 28.25}
+    Rotation: {x: -0, y: -0, z: -0, w: 1}
+    Scale: {x: 4.7, y: 5, z: 1}
+  - SpawnablePrefab: {fileID: 1088801862163379463, guid: 1d3abb9dbabb53f488034f6dcbe259b1,
+      type: 3}
+    Position: {x: -1.5, y: 1.6, z: 28.25}
+    Rotation: {x: -0, y: -0, z: -0, w: 1}
+    Scale: {x: 4.7, y: 5, z: 1}
+  - SpawnablePrefab: {fileID: 5560439046438133864, guid: 8e63ca9d9b4194e4ea0e88eb8c4ef055,
+      type: 3}
+    Position: {x: 0, y: 0.7, z: 41.5}
+    Rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+    Scale: {x: 1, y: 1, z: 1}
+  - SpawnablePrefab: {fileID: 825055414241866519, guid: d9c07461535a7a14283dd8d5d4e01928,
+      type: 3}
+    Position: {x: -2, y: 0.7, z: 54.75}
+    Rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+    Scale: {x: 1, y: 1, z: 1}
+  - SpawnablePrefab: {fileID: 4663115092404325777, guid: 35a538b37a6bbda4094e813590c70f72,
+      type: 3}
+    Position: {x: 2, y: 0.7, z: 60.5}
+    Rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+    Scale: {x: 1, y: 1, z: 1}
+  - SpawnablePrefab: {fileID: 8466544637258272938, guid: e654177dc0a98c444bf7491a6e1a9a77,
+      type: 3}
+    Position: {x: -1.5, y: 0.7, z: 20.75}
+    Rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+    Scale: {x: 1, y: 1, z: 1}
+  - SpawnablePrefab: {fileID: 8466544637258272938, guid: e654177dc0a98c444bf7491a6e1a9a77,
+      type: 3}
+    Position: {x: 2, y: 0.7, z: 35}
+    Rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+    Scale: {x: 1, y: 1, z: 1}
+  - SpawnablePrefab: {fileID: 8466544637258272938, guid: e654177dc0a98c444bf7491a6e1a9a77,
+      type: 3}
+    Position: {x: 1.5, y: 0.7, z: 20.75}
+    Rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+    Scale: {x: 1, y: 1, z: 1}
+  - SpawnablePrefab: {fileID: 3834472021869117958, guid: 3bf4695257df8804db4cd1e1c3ee6cca,
+      type: 3}
+    Position: {x: 2, y: 0.7, z: 49.25}
+    Rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+    Scale: {x: 1, y: 1, z: 1}
+  - SpawnablePrefab: {fileID: 8466544637258272938, guid: e654177dc0a98c444bf7491a6e1a9a77,
+      type: 3}
+    Position: {x: -2, y: 0.7, z: 46.75}
+    Rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+    Scale: {x: 1, y: 1, z: 1}
+  - SpawnablePrefab: {fileID: 4663115092404325777, guid: 35a538b37a6bbda4094e813590c70f72,
+      type: 3}
+    Position: {x: 0, y: 0.7, z: 77.94}
+    Rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+    Scale: {x: 1, y: 1, z: 1}
