@@ -56,11 +56,8 @@ public class AudioManager : MonoBehaviour
         // Get corresponding audio from dictionary
         AudioClip SFXClip = audioIDClipDictionary[audioID];
 
-        // Assign the clip to SFX audio source
-        SFXSource.clip = SFXClip;
-
         // Play SFX
-        SFXSource.Play();
+        SFXSource.PlayOneShot(SFXClip);
     }
 
     private void OnValidate()
