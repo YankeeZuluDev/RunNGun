@@ -17,12 +17,10 @@ Unity version: 2021.3.18f1 (LTS)
 Accessibility: Project can be freely explored in unity
 
 ## Screenshots
-<img src="https://user-images.githubusercontent.com/129124150/230691985-505cc6eb-416c-403a-bf8d-4c82c1d757bc.jpg" alt="screenshot_1" width="400" height="300">
-     
-![screenshot_1](https://user-images.githubusercontent.com/129124150/230691985-505cc6eb-416c-403a-bf8d-4c82c1d757bc.jpg)
-![screenshot_2](https://user-images.githubusercontent.com/129124150/230692238-ef5a2bc5-6f06-4bbe-a8f6-1ac830320a40.jpg)
-![screenshot_3](https://user-images.githubusercontent.com/129124150/230692400-86410413-3e65-41a9-a762-e3f29905fc7e.jpg)
-![screenshot_4](https://user-images.githubusercontent.com/129124150/230692542-7f19aacb-91b8-4cf7-8075-1b2e7ca5002e.jpg)
+<img src="https://user-images.githubusercontent.com/129124150/230711931-dc82b082-d3b2-4878-a8ad-6f046a1bdceb.jpg" alt="screenshot_1" width="270" height="480">
+<img src="https://user-images.githubusercontent.com/129124150/230711970-45ec7c31-1996-43eb-b313-b547ff35ba8f.jpg" alt="screenshot_1" width="270" height="480">
+<img src="https://user-images.githubusercontent.com/129124150/230711976-99469490-2178-48a3-8ea2-95858d799111.jpg" alt="screenshot_1" width="270" height="480">
+<img src="https://user-images.githubusercontent.com/129124150/230711980-4272fdfb-7d16-4e4d-889b-61de90dbf6e3.jpg" alt="screenshot_1" width="270" height="480">
 
 ## Best сode practices in this project
 
