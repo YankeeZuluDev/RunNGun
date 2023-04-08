@@ -1,11 +1,11 @@
 # RunNGun
 A repository for "Run N Gun: Merge" game source code. The project can be freely explored in Unity. 
 
-[:camera: See Screenshots](#screenshots)
+[:camera: **See Screenshots**](#screenshots)
 
 [:movie_camera: **See gameplay video**](https://www.youtube.com/watch?v=uu2AngDUh1s)
 
-[:video_game: Play](https://play.google.com/store/apps/details?id=com.YankeeZulu.RunNGun)
+[:video_game: **Play**](https://play.google.com/store/apps/details?id=com.YankeeZulu.RunNGun)
 
 ## About the game
 Genre: Hyper-casual
