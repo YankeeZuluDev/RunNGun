@@ -7,8 +7,11 @@ A repository for "Run N Gun: Merge" game source code. The project can be freely 
 
 ## About the game
 Genre: Hyper-casual
+
 Mechanics: running, shooting, merging
+
 Unity version: 2021.3.18f1 (LTS)
+
 Accessibility: Project can be freely explored in unity
 
 ## Screenshots
