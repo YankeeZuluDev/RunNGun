@@ -30,6 +30,7 @@ public class LevelLoader : MonoBehaviour
     private MoneyStorage moneyStorage;
     private PlayerMovement playerMovement;
     private InteractionHandler playerInteractionHandler;
+    private WeaponList playerWeaponList;
     private FollowCamera followCamera;
     private UIManager uIManager;
     private AudioManager audioManager;
@@ -71,6 +72,7 @@ public class LevelLoader : MonoBehaviour
         GameObject playerGameObject = Instantiate(playerPrefab, playerPrefab.transform.position, playerPrefab.transform.rotation);
         playerMovement = playerGameObject.GetComponent<PlayerMovement>();
         playerInteractionHandler = playerGameObject.GetComponent<InteractionHandler>();
+        playerWeaponList = playerGameObject.GetComponentInChildren<WeaponList>();
 
         // Load camera
         GameObject cameraGameObject = Instantiate(cameraPrefab, cameraPrefab.transform.position, cameraPrefab.transform.rotation);
@@ -99,6 +101,7 @@ public class LevelLoader : MonoBehaviour
         // Initialize player
         playerMovement.InitializePlayerMovement(currentLevel.RoadWidth);
         playerInteractionHandler.InitializeInteractionHandler(moneyStorage);
+        playerWeaponList.InitializeWeaponList(bulletPools);
 
         // Initialize camera
         followCamera.InitialzieCamera(playerMovement);

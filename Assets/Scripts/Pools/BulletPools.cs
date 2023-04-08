@@ -7,23 +7,12 @@ using UnityEngine.Pool;
 /// </summary>
 public class BulletPools : MonoBehaviour
 {
-    private static BulletPools instance;
+    //private static BulletPools instance;
 
     [SerializeField] private List<GameObject> bulletPrefabs;
 
     // Dictionary, where the key is prefab and the value is bullet pool
     private Dictionary<GameObject, ObjectPool<Bullet>> prefabToPoolDicitionary = new();
-
-    public static BulletPools Instance => instance;
-
-    private void Awake()
-    {
-        // Singleton // TODO: remove singleton
-        if (instance != null && instance != this)
-            Destroy(this);
-        else
-            instance = this;
-    }
 
     public void InitializePrefabPoolDicitonary()
     {
@@ -63,17 +52,13 @@ public class BulletPools : MonoBehaviour
         Destroy(bullet.gameObject);
     }
 
-    public bool TryGetCorrespondingPool(GameObject prefab, out ObjectPool<Bullet> correspondingPool)
+    public ObjectPool<Bullet> GetCorrespondingPool(GameObject prefab)
     {
         // Return corresponding pool if it exists in dictionary
         if (prefabToPoolDicitionary.ContainsKey(prefab))
-        {
-            correspondingPool = prefabToPoolDicitionary[prefab];
-            return true;
-        }
+            return prefabToPoolDicitionary[prefab];
 
-        // Return null if nothing was found
-        correspondingPool = null;
-        return false;
+        // Throw an exception if nothing was found
+        throw new KeyNotFoundException($"No Corresponding pool was found for {prefab}");
     }
 }

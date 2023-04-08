@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Pool;
 
 /// <summary>
 /// This class is used to add, spawn and remove weapons
@@ -18,9 +19,15 @@ public class WeaponList : MonoBehaviour, IResettable
     private MergeWeaponsManager mergeWeaponsManager;
     private WeaponPositionManager weaponPositionManager;
     private WeaponPropertiesManager weaponPropertiesManager;
+    private BulletPools bulletPools;
 
     public List<Weapon> Weapons => weapons;
     public bool IsFull => weapons.Count >= maxWeaponAmount;
+
+    public void InitializeWeaponList(BulletPools bulletPools)
+    {
+        this.bulletPools = bulletPools;
+    }
 
     private void Awake()
     {
@@ -50,10 +57,15 @@ public class WeaponList : MonoBehaviour, IResettable
             weaponPropertiesManager.ApplyChangedProperties(newWeapon);
 
         // If matching weapon exists, then merge it with added weapon
-        if (matchingWeapon != null) // TODO: replace with hasmatching bool
+        if (matchingWeapon != null) 
             mergeWeaponsManager.MergeWeapons(newWeapon, matchingWeapon);
 
+        // Equally destribute weapon transform positions along area
         weaponPositionManager.UpdateWeaponPositions();
+
+        // Get corresponding bullet pool for current weapon and pass to new weapon
+        ObjectPool<Bullet> bulletPool = bulletPools.GetCorrespondingPool(newWeapon.WeaponConfiguration.BulletPrefab);
+        newWeapon.SetBulletPool(bulletPool);
 
         // Start shooting
         newWeapon.StartCoroutine(newWeapon.Shoot());
@@ -72,9 +84,16 @@ public class WeaponList : MonoBehaviour, IResettable
 
     public void SpawnDefaultWeapon()
     {
+        // Spawn default weapon
         Weapon defaultWeapon = SpawnWeapon(defaultWeaponConfiguration);
+
+        // Add default weapon to list
         weapons.Add(defaultWeapon);
-    }
+
+        // Get corresponding bullet pool for current weapon and pass to new weapon
+        ObjectPool<Bullet> bulletPool = bulletPools.GetCorrespondingPool(defaultWeapon.WeaponConfiguration.BulletPrefab);
+        defaultWeapon.SetBulletPool(bulletPool);
+    } 
 
     public void ResetGameObject()
     {

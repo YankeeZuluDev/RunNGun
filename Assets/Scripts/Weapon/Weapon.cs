@@ -11,20 +11,11 @@ public class Weapon : MonoBehaviour, IPickupable
     [SerializeField] private WeaponConfiguration weaponConfiguration;
     [SerializeField] private Transform barrelTransform;
 
-    private GameObject bulletPrefab;
     private ObjectPool<Bullet> bulletPool;
     private List<WeaponProperty> weaponProperties;
 
     public WeaponConfiguration WeaponConfiguration => weaponConfiguration;
     public List<WeaponProperty> WeaponProperties => weaponProperties;
-
-    private void Awake()
-    {
-        bulletPrefab = weaponConfiguration.BulletPrefab;
-
-        // Create a copy of weapon properties from weapon configuration and assign it to weaponProperties
-        weaponProperties = InitializeWeaponProperties();
-    }
 
     private List<WeaponProperty> InitializeWeaponProperties()
     {
@@ -42,11 +33,10 @@ public class Weapon : MonoBehaviour, IPickupable
         return list;
     }
 
-    private void Start()
+    private void Awake()
     {
-        // Get bullet pool
-        if (!BulletPools.Instance.TryGetCorrespondingPool(bulletPrefab, out bulletPool))
-            throw new System.NullReferenceException("No Corresponding pool was found for bullet");
+        // Create a copy of weapon properties from weapon configuration and assign it to weaponProperties
+        weaponProperties = InitializeWeaponProperties();
     }
 
     public IEnumerator Shoot()
@@ -74,5 +64,10 @@ public class Weapon : MonoBehaviour, IPickupable
 
         // Move bullet towards target position
         bullet.Move(targetPosition, weaponProperties[(int)WeaponPropertyType.ShotSpeed].Amount);
+    }
+
+    public void SetBulletPool(ObjectPool<Bullet> bulletPool)
+    {
+        this.bulletPool = bulletPool;
     }
 }
