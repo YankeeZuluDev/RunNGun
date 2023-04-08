@@ -17,9 +17,7 @@ Unity version: 2021.3.18f1 (LTS)
 Accessibility: Project can be freely explored in unity
 
 ## Screenshots
-<img src="screenshot_1](https://user-images.githubusercontent.com/129124150/230691985-505cc6eb-416c-403a-bf8d-4c82c1d757bc.jpg" 
-     width="400" 
-     height="500" />
+<img src="https://user-images.githubusercontent.com/129124150/230691985-505cc6eb-416c-403a-bf8d-4c82c1d757bc.jpg" alt="screenshot_1" width="400" height="300">
      
 ![screenshot_1](https://user-images.githubusercontent.com/129124150/230691985-505cc6eb-416c-403a-bf8d-4c82c1d757bc.jpg)
 ![screenshot_2](https://user-images.githubusercontent.com/129124150/230692238-ef5a2bc5-6f06-4bbe-a8f6-1ac830320a40.jpg)
