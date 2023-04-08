@@ -5,6 +5,8 @@ A repository for "Run N Gun: Merge" game source code. The project can be freely 
 
 [:movie_camera: **See gameplay video**](https://www.youtube.com/watch?v=uu2AngDUh1s)
 
+[:video_game: Play](https://play.google.com/store/apps/details?id=com.YankeeZulu.RunNGun)
+
 ## About the game
 Genre: Hyper-casual
 
