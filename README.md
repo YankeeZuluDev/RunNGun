@@ -35,7 +35,7 @@ Class responsibilities in this project are well defined amd separated. Each clas
 
 <div style="display:flex;">
   <img src="https://github.com/YankeeZuluDev/RunNGun/assets/129124150/93b766ab-e3df-4cab-8ec2-8e041730c74e" alt="screenshot_1" width="450" height="566">
-  <img src="https://github.com/YankeeZuluDev/RunNGun/assets/129124150/973027ac-df4e-424a-9c47-af1592f2365c" alt="screenshot_2" width="450" height="566">
+  <img src="https://github.com/YankeeZuluDev/RunNGun/assets/129124150/973027ac-df4e-424a-9c47-af1592f2365c" alt="screenshot_2" height="566">
 </div>
 
 ### Game event system
