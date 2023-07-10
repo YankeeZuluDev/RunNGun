@@ -31,7 +31,12 @@ Accessibility: Project can be freely explored in unity
 This project uses object pooling to efficiently manage and reuse bullet objects within the game. Object pooling minimizes the overhead of creating and destroying bullet objects dynamically, resulting in improved performance and reduced memory allocation. [Code](https://github.com/YankeeZuluDev/RunNGun/blob/main/Assets/Scripts/Pools/BulletPools.cs)
 
 ### Split responsibilities
-Class responsibilities in this project are well defined amd separated. 
+Class responsibilities in this project are well defined amd separated. Each class is responsible for only one thing
+
+<div style="display:flex;">
+  <img src="https://github.com/YankeeZuluDev/RunNGun/assets/129124150/93b766ab-e3df-4cab-8ec2-8e041730c74e" alt="screenshot_1" width="270" height="480">
+  <img src="https://github.com/YankeeZuluDev/RunNGun/assets/129124150/973027ac-df4e-424a-9c47-af1592f2365c" alt="screenshot_2" width="270" height="480">
+</div>
 
 ### Game event system
 
