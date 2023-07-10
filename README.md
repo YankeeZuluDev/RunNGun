@@ -34,15 +34,18 @@ This game uses object pooling to efficiently manage and reuse bullet objects wit
 Class responsibilities in this project are well defined and separated. Each class is responsible for only one thing. [Code](https://github.com/YankeeZuluDev/RunNGun/tree/main/Assets/Scripts/Player)
 
 <div style="display:flex;">
-  <img src="https://github.com/YankeeZuluDev/RunNGun/assets/129124150/93b766ab-e3df-4cab-8ec2-8e041730c74e" alt="screenshot_1" width="450" height="566">
-  <img src="https://github.com/YankeeZuluDev/RunNGun/assets/129124150/973027ac-df4e-424a-9c47-af1592f2365c" alt="screenshot_2" height="566">
+  <img src="https://github.com/YankeeZuluDev/RunNGun/assets/129124150/93b766ab-e3df-4cab-8ec2-8e041730c74e" alt="screenshot_5" width="450" height="566">
+  <img src="https://github.com/YankeeZuluDev/RunNGun/assets/129124150/973027ac-df4e-424a-9c47-af1592f2365c" alt="screenshot_6" height="566">
 </div>
 
 ### Game event system
-This game uses an event system to handle in-game events such as GameStartEvent or GameWonEvent. The event system is implemented uisng ScriptableObjects, making it simple, convinient and extendible. The event system consists of 2 classes: GameEvent and GameEventListener. [GameEvent class](https://github.com/YankeeZuluDev/RunNGun/blob/main/Assets/Scripts/Events/GameEvent.cs) provides a way to create custom game events that can be triggered by different components. It allows for flexible event handling and communication between different parts of the game. [GameEventListener class](https://github.com/YankeeZuluDev/RunNGun/blob/main/Assets/Scripts/Events/GameEventListener.cs) is responsible for listening to a specific GameEvent and triggering a UnityEvent response when that event is raised. GameEventListener can be attached to any gameobject. Event system is implemented using [observer pattern](https://en.wikipedia.org/wiki/Observer_pattern)
+This game uses an event system to handle in-game events such as GameStartEvent or GameWonEvent. The event system is implemented uisng ScriptableObjects, making it simple, convinient and extendible. The event system consists of 2 classes: GameEvent and GameEventListener. [GameEvent class](https://github.com/YankeeZuluDev/RunNGun/blob/main/Assets/Scripts/Events/GameEvent.cs) provides a way to create custom game events that can be triggered by different components. It allows for flexible event handling and communication between different parts of the game. [GameEventListener class](https://github.com/YankeeZuluDev/RunNGun/blob/main/Assets/Scripts/Events/GameEventListener.cs) is responsible for listening to a specific GameEvent and triggering a UnityEvent response when that event is raised. GameEventListener can be attached to any gameobject. Event system is implemented using [observer pattern](https://en.wikipedia.org/wiki/Observer_pattern).
 
 ### Custom level constructor window
-
+This project has [custom editor window](https://github.com/YankeeZuluDev/RunNGun/blob/main/Assets/Editor/RunnerLevelConstructor.cs) that is used to construct levels and save them levels. This approach provides convinient and flexible way for level creation. Levels are stored as [LevelDefinition](https://github.com/YankeeZuluDev/RunNGun/blob/main/Assets/Scripts/LevelLoading/LevelDefinition.cs) ScriptableObjects. LevelDefinition class consists of 3 parts: the length of the level, the width of the level and an array of [data classes for spawnables](https://github.com/YankeeZuluDev/RunNGun/blob/main/Assets/Scripts/Data/SpawnableData.cs), that contain all the necessary information to instantiate spawnables at runtime
+<div style="display:flex;">
+  <img src="https://github.com/YankeeZuluDev/RunNGun/assets/129124150/1b408416-708b-454b-802d-d5cd50e9c5c9" alt="screenshot_7">
+</div>
 
 ### Load time dependency injection
 
