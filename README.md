@@ -30,12 +30,8 @@ Accessibility: Project can be freely explored in unity
 ### Object pooling
 This project uses object pooling to efficiently manage and reuse bullet objects within the game. Object pooling minimizes the overhead of creating and destroying bullet objects dynamically, resulting in improved performance and reduced memory allocation. [Code](https://github.com/YankeeZuluDev/RunNGun/blob/main/Assets/Scripts/Pools/BulletPools.cs)
 
-
-### Smooth follow camera
-
-
 ### Split responsibilities
-
+Class responsibilities in this project are well defined amd separated. 
 
 ### Game event system
 
