@@ -34,8 +34,8 @@ This project uses object pooling to efficiently manage and reuse bullet objects 
 Class responsibilities in this project are well defined amd separated. Each class is responsible for only one thing
 
 <div style="display:flex;">
-  <img src="https://github.com/YankeeZuluDev/RunNGun/assets/129124150/93b766ab-e3df-4cab-8ec2-8e041730c74e" alt="screenshot_1" width="270" height="480">
-  <img src="https://github.com/YankeeZuluDev/RunNGun/assets/129124150/973027ac-df4e-424a-9c47-af1592f2365c" alt="screenshot_2" width="270" height="480">
+  <img src="https://github.com/YankeeZuluDev/RunNGun/assets/129124150/93b766ab-e3df-4cab-8ec2-8e041730c74e" alt="screenshot_1">
+  <img src="https://github.com/YankeeZuluDev/RunNGun/assets/129124150/973027ac-df4e-424a-9c47-af1592f2365c" alt="screenshot_2">
 </div>
 
 ### Game event system
