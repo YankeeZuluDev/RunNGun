@@ -29,7 +29,7 @@ Accessibility: Project can be freely explored in unity
 
 ### Object pooling
 This project uses object pooling to efficiently manage and reuse bullet objects within the game. Object pooling minimizes the overhead of creating and destroying bullet objects dynamically, resulting in improved performance and reduced memory allocation. 
-```
+```C#
 public class BulletPools : MonoBehaviour
 {
     //private static BulletPools instance;
