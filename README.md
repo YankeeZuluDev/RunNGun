@@ -39,7 +39,7 @@ Class responsibilities in this project are well defined and separated. Each clas
 </div>
 
 ### Game event system
-This game uses an event system to handle in-game events such as GameStartEvent or GameWonEvent. The event system is implemented uisng ScriptableObjects, making it simple, convinient and extendible. The event system consists of 2 classes: GameEvent and GameEventListener. [GameEvent class](https://github.com/YankeeZuluDev/RunNGun/blob/main/Assets/Scripts/Events/GameEvent.cs) provides a way to create custom game events that can be triggered by different components. It allows for flexible event handling and communication between different parts of the game. [GameEventListener class](https://github.com/YankeeZuluDev/RunNGun/blob/main/Assets/Scripts/Events/GameEventListener.cs) is responsible for listening to a specific GameEvent and triggering a UnityEvent response when that event is raised. GameEventListener can be attached to any gameobject. Event system is implemented using [observer pattern](https://en.wikipedia.org/wiki/Observer_pattern).
+This game uses an event system to handle in-game events such as GameStartEvent or GameWonEvent. The event system is implemented uisng ScriptableObjects, making it simple, convenient and extendible. The event system consists of 2 classes: GameEvent and GameEventListener. [GameEvent class](https://github.com/YankeeZuluDev/RunNGun/blob/main/Assets/Scripts/Events/GameEvent.cs) provides a way to create custom game events that can be triggered by different components. It allows for flexible event handling and communication between different parts of the game. [GameEventListener class](https://github.com/YankeeZuluDev/RunNGun/blob/main/Assets/Scripts/Events/GameEventListener.cs) is responsible for listening to a specific GameEvent and triggering a UnityEvent response when that event is raised. GameEventListener can be attached to any gameobject. Event system is implemented using [observer pattern](https://en.wikipedia.org/wiki/Observer_pattern).
 
 ### Custom level constructor window
 This project has [custom editor window](https://github.com/YankeeZuluDev/RunNGun/blob/main/Assets/Editor/RunnerLevelConstructor.cs) that is used to construct and save levels. Upon dragging gameobjects to the scene, gameobjects with component derived from the Spawnable class will automatically have a corresponding data class generated and saved to level definition when the "Save Level Definition" button is pressed. This approach provides convinient and flexible way for level creation. Levels are stored as [LevelDefinition](https://github.com/YankeeZuluDev/RunNGun/blob/main/Assets/Scripts/LevelLoading/LevelDefinition.cs) ScriptableObjects. LevelDefinition class consists of 3 parts: the length of the level, the width of the level and an array of [data classes for spawnables](https://github.com/YankeeZuluDev/RunNGun/blob/main/Assets/Scripts/Data/SpawnableData.cs), that contain all the necessary information to instantiate spawnables at runtime.
@@ -48,8 +48,5 @@ This project has [custom editor window](https://github.com/YankeeZuluDev/RunNGun
   <img src="https://github.com/YankeeZuluDev/RunNGun/assets/129124150/1b408416-708b-454b-802d-d5cd50e9c5c9" alt="screenshot_7">
 </div>
 
-### Load time dependency injection
-
-
-### Static classes
-
+### Prefab-based project architecture
+This project uses prefab-based design approach, utilizing the power of prefabs to create and organize all game parts. Prefab-based approach allows for reusability, efficiency, easier testing, better collaboration and significant time and effort savings when implementing new features to some game parts. Additionally it allows for more convenient game initialization and dependency resolving.
