@@ -30,7 +30,7 @@ public static class Extensions
     /// An extension method, that checks if a list of audio ID-Clip pairs list has any duplicate audioID`s
     /// </summary>
     /// <returns>True if duplicate audio ID was found, false if not</returns>
-    public static bool HasAnyDuplicateAudioIDs(this List<AudioIDClipPair> audioIDClipPairsList, out AudioID? duplicateID)
+    public static bool HasAnyDuplicateAudioIDs(this List<AudioIDClipPair> audioIDClipPairsList, out AudioID? duplicateID) // это точно я написал? Переделать с HashSet`ом
     {
         for (int i = 0; i < audioIDClipPairsList.Count; i++)
         {
