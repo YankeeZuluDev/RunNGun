@@ -34,7 +34,7 @@ public static class Tweens
     }
 
     /// <summary>
-    /// Smoothly bounce in and the bounce out
+    /// Smoothly bounce in and out
     /// </summary>
     public static IEnumerator BounceInOut(Transform transform, float strenght, float duration)
     {
@@ -70,7 +70,7 @@ public static class Tweens
         float elapsedTime = 0;
 
         // Calculate mid point
-        Vector3 center = (firstTransform.position + secondTransform.position) / 2f; // ок, а если 3 и через params сделать?
+        Vector3 center = (firstTransform.position + secondTransform.position) / 2f; // Г®ГЄ, Г  ГҐГ±Г«ГЁ 3 ГЁ Г·ГҐГ°ГҐГ§ params Г±Г¤ГҐГ«Г ГІГј?
 
         // original position
         Vector3 firstOriginalPosition = firstTransform.position;
