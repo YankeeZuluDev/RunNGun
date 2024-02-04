@@ -7,6 +7,8 @@ A repository for "Run N Gun: Merge" game source code
 
 [:video_game: **Play**](https://play.google.com/store/apps/details?id=com.YankeeZulu.RunNGun)
 
+[:100: **Best сode practices**](#best-сode-practices-in-this-project)
+
 ## About the game
 Genre: Hyper-casual
 
